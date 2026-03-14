@@ -1,7 +1,3 @@
-<!--
-  shop.html – Endast överproducerad mat säljs här
-  För att beställa måste användaren klicka på länk & logga in via MenyIT
--->
 <!DOCTYPE html>
 <html lang="sv">
 <head>
@@ -12,30 +8,33 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- NAVIGATIONSMENY MED ADMIN & MENYIT -->
   <header>
     <nav>
-      <div class="logo">CateringCare</div>
+      <div class="logo">
+        <a href="index.html" style="text-decoration:none; color:inherit;">CateringCare</a>
+      </div>
       <ul>
         <li><a href="index.html#meny">Meny</a></li>
         <li><a href="index.html#om">Om oss</a></li>
         <li><a href="index.html#kontakt">Kontakt</a></li>
+        <li><a href="admin/dashboard.html">Admin</a></li>
+        <li><a href="https://menyit.se/" target="_blank" rel="noopener">Logga in MenyIT</a></li>
       </ul>
+      <a href="shop.html" class="cta">Handla nu</a>
     </nav>
   </header>
-
   <main class="shop-main">
     <h1>Köp överproducerad mat – Rädda en måltid</h1>
     <p class="info-text">Här kan du köpa mat som blivit över – smart för både klimat och plånbok.<br>
       För att beställa behöver du logga in med ditt kostdatakonto via MenyIT.</p>
-
-    <!-- Produktexempel, fylls ut från admin senare -->
+    <!-- Produktexempel, fylls på senare via admin -->
     <div class="products">
       <div class="product-card">
         <h2>CateringCare's överblivna lasagne</h2>
         <p>Vegetarisk lasagne från dagens lunch.<br>
           Portion: ca 450g. Begränsat antal!</p>
         <div class="price">49 kr</div>
-        <!-- Ej "Köp"-knapp här, utan tydlig info om inlogg -->
       </div>
       <div class="product-card">
         <h2>Kall laxsallad</h2>
@@ -43,15 +42,12 @@
           Portion: ca 400g.</p>
         <div class="price">45 kr</div>
       </div>
-      <!-- Din admin fyller på fler produkter här! -->
     </div>
-
     <div class="login-info">
       <a href="https://menyit.se/" class="cta large" target="_blank">Logga in & beställ via MenyIT</a>
       <p class="help">Du måste logga in på MenyIT för att köpa maten.</p>
     </div>
   </main>
-
   <footer>
     <p>&copy; 2026 CateringCare. All rights reserved.</p>
   </footer>
