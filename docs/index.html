@@ -1,8 +1,6 @@
 <!--
-  CateringCare Platform — Modern, responsiv landningssida
-  Syfte: Ge första intrycket, tydlig info & snabb väg vidare.
-  Funktion: Minimalistisk, snabb, SEO-optimerad, tydlig CTA för kund och besökare.
-  Mobile-first och responsiv design.
+  Startsida för CateringCare – komplett version med navigation, adminlänk och MenyIT-länk.
+  Klistra in hela koden så blir toppbaren rätt och sidan fungerar!
 -->
 <!DOCTYPE html>
 <html lang="sv">
@@ -12,48 +10,41 @@
   <meta name="description" content="En modern plattform för beställning av catering, menyer och AI-stödd service." />
   <title>CateringCare – Beställ mat enkelt</title>
   <link rel="stylesheet" href="styles.css" />
-  <!-- SEO-optimerat med beskrivning, rubrik, snabb laddning -->
 </head>
 <body>
-  <!-- 
-    Header-sektionen med logotyp och navigation. 
-    CTA-knappen leder vidare till shopen eller dagens meny.
-  -->
+  <!-- NAVIGATIONSMENY MED ADMIN & MENYIT -->
   <header>
     <nav>
-      <div class="logo">CateringCare</div>
+      <!-- Logotyp -->
+      <div class="logo">
+        <a href="index.html" style="text-decoration:none; color:inherit;">CateringCare</a>
+      </div>
+      <!-- Menylänkar -->
       <ul>
-        <li><a href="#meny">Meny</a></li>
-        <li><a href="#om">Om oss</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="index.html#meny">Meny</a></li>
+        <li><a href="index.html#om">Om oss</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+        <li><a href="admin/dashboard.html">Admin</a></li> <!-- Navigerar till adminpanelen -->
+        <li><a href="https://menyit.se/" target="_blank" rel="noopener">Logga in MenyIT</a></li> <!-- Går till kostdataprogrammet -->
       </ul>
+      <!-- Huvudknapp till shop -->
       <a href="shop.html" class="cta">Handla nu</a>
     </nav>
   </header>
-  
-  <!-- 
-    Hero-sektion med direkt budskap och CTA.
-    Tänk: Ren, tydlig, minst distraktion.
-  -->
+
+  <!-- HERO-DELSIDA -->
   <section class="hero">
     <h1>Beställ catering snabbt & tryggt</h1>
     <p>Vi levererar dagens lunch, festmenyer och skräddarsydd catering – snabbt, smidigt och säkert. Prova själv!</p>
     <a href="shop.html" class="cta large">Se vår meny</a>
-    <!-- Social proof med kort recension -->
     <div class="reviews">
       ⭐⭐⭐⭐⭐ <small>4.9/5 från 239 nöjda kunder</small>
     </div>
   </section>
   
-  <!-- 
-    Sektion för hela menyn – syns direkt på desktop, "scrolla ner" på mobil.
-  -->
+  <!-- MENYFÖRHANDSVISNING -->
   <section id="meny" class="menu-preview">
     <h2>Dagens meny</h2>
-    <!-- 
-      Här kan dynamiskt menyinnehåll laddas via API. 
-      Just nu bara plats för enkel statisk demo:
-    -->
     <ul class="dishes">
       <li>
         <span class="dish-name">Caesarsallad</span>
@@ -71,18 +62,13 @@
     <a href="shop.html" class="cta">Beställ nu</a>
   </section>
 
-  <!-- 
-    Sektion "Om oss" — Bygger förtroende, kort info.
-  -->
+  <!-- OM OSS -->
   <section id="om" class="about">
     <h2>Om CateringCare</h2>
     <p>Med över 10 års erfarenhet levererar vi lunch, event, och catering till privatpersoner och företag. Alltid snabb service och personlig kontakt.</p>
   </section>
       
-  <!-- 
-    Kontakt-sektion — Gör det enkelt för kunden att snabbt hitta stöd.
-    Kan kompletteras med formulär, nu bara info.
-  -->
+  <!-- KONTAKT -->
   <section id="kontakt" class="contact">
     <h2>Kontakt & Support</h2>
     <p>
@@ -95,7 +81,7 @@
     </div>
   </section>
   
-  <!-- Footer med tydlig struktur och copyright -->
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2026 CateringCare. All rights reserved.</p>
   </footer>
