@@ -1,1 +1,47 @@
+<!--
+  Admin Dashboard – Översiktspanel för CateringCare
+  Syfte: Ge admin enkel överblick och snabb navigering till olika verktyg.
+  Enkel att bygga ut med fler funktioner, varje länk går till egen sida.
+-->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | CateringCare Dashboard</title>
+  <!-- Grundläggande admincss, gärna återanvänd från site, men separat om behov finns -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Block: Header och välkomsttext, lätt att anpassa -->
+  <header>
+    <h1>Adminpanel – CateringCare</h1>
+    <p>Välkommen, admin! Här styr du menyer, order, kommunikation, kopplingar m.m.</p>
+  </header>
 
+  <!-- Block: Navigation till respektive underrubrik/funktioner -->
+  <nav class="admin-nav">
+    <ul>
+      <li><a href="manage-dishes.html">Hantera överproducerad mat</a></li>
+      <li><a href="#">Order & kvitton (kommer)</a></li>
+      <li><a href="#">Chatt & mail (kommer)</a></li>
+      <li><a href="#">Kassabok & rapport (kommer)</a></li>
+      <li><a href="#">Integration MenyIT (kommer)</a></li>
+    </ul>
+  </nav>
+
+  <!-- Block: Sektion för framtida systeminformation -->
+  <section class="admin-info">
+    <h2>Status & info</h2>
+    <div id="admin-status">
+      <!-- Inlinekommentar: Här laddas info & statistik dynamiskt in från JS i framtiden -->
+      <p>Systemet är online.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 CateringCare Adminpanel</p>
+  </footer>
+  <script src="dashboard.js"></script>
+</body>
+</html>
