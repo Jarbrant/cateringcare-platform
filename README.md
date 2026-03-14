@@ -1,3 +1,14 @@
+# CateringCare Platform
+
+> Plattform för restaurangmeny, beställning, betalning och adminpanel. Byggd för snabba Cloudflare Workers och kopplad mot PostgreSQL.
+```
+**Steg-för-steg-projektplan finns dokumenterad i projektplan.md.**
+```
+
+---
+
+Vill du att jag börjar skriva kod för någon särskild modul, t.ex. konfigurera en Cloudflare Worker, eller ska vi ta **db/schema.sql** för databasens första tabeller nästa?  
+Meddela vilket steg eller del av fas 1 du vill ta först, så skriver jag detaljerad kod inklusive blockkommentarer & inlineförklaringar – och på svenska!
 cateringcare-platform/
 │
 ├── frontend/
