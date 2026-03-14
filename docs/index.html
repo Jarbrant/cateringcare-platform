@@ -1,7 +1,3 @@
-<!--
-  Startsida för CateringCare – komplett version med navigation, adminlänk och MenyIT-länk.
-  Klistra in hela koden så blir toppbaren rätt och sidan fungerar!
--->
 <!DOCTYPE html>
 <html lang="sv">
 <head>
@@ -12,22 +8,27 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- NAVIGATIONSMENY MED ADMIN & MENYIT -->
+  <!-- NAVIGATIONSMENY MED KORREKT ADMIN-LÄNK -->
   <header>
     <nav>
       <!-- Logotyp -->
       <div class="logo">
         <a href="index.html" style="text-decoration:none; color:inherit;">CateringCare</a>
       </div>
-      <!-- Menylänkar -->
       <ul>
         <li><a href="index.html#meny">Meny</a></li>
         <li><a href="index.html#om">Om oss</a></li>
         <li><a href="index.html#kontakt">Kontakt</a></li>
-        <li><a href="admin/dashboard.html">Admin</a></li> <!-- Navigerar till adminpanelen -->
-        <li><a href="https://menyit.se/" target="_blank" rel="noopener">Logga in MenyIT</a></li> <!-- Går till kostdataprogrammet -->
+        <!-- Admin-länk direkt till Cloudflare Worker-adminpanelen -->
+        <li>
+          <a href="https://cateringcare-platform.andersmenyit.workers.dev/admin/dashboard.html">Admin</a>
+        </li>
+        <!-- MenyIT-inloggning öppnas i ny flik -->
+        <li>
+          <a href="https://menyit.se/" target="_blank" rel="noopener">Logga in MenyIT</a>
+        </li>
       </ul>
-      <!-- Huvudknapp till shop -->
+      <!-- Call To Action: Gå direkt till shopen -->
       <a href="shop.html" class="cta">Handla nu</a>
     </nav>
   </header>
