@@ -1,19 +1,17 @@
 <!--
-  Shop-sida för CateringCare Platform
-  Syfte: Visa produktkort (rätter), låta användaren lägga till i varukorg och gå till kassa.
-  Byggd minimalistiskt och responsivt, anpassad för API-integration längre fram.
+  shop.html – Endast överproducerad mat säljs här
+  För att beställa måste användaren klicka på länk & logga in via MenyIT
 -->
 <!DOCTYPE html>
 <html lang="sv">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Handla catering och lunch online. Smidig checkout och mobilvänlig design." />
-  <title>CateringCare – Shop</title>
+  <meta name="description" content="Rädda maten! Köp överproducerad mat från CateringCare och logga in med MenyIT." />
+  <title>CateringCare – Rädda mat (shop)</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header återanvänds från index.html för konsekvent nav -->
   <header>
     <nav>
       <div class="logo">CateringCare</div>
@@ -22,58 +20,40 @@
         <li><a href="index.html#om">Om oss</a></li>
         <li><a href="index.html#kontakt">Kontakt</a></li>
       </ul>
-      <a href="shop.html" class="cta">Handla nu</a>
     </nav>
   </header>
-  
-  <!-- 
-    Shop-container: visar produktkort och varukorg.
-    Produktkorten laddas statiskt här, men ersätts senare med dynamiskt API-anrop.
-  -->
+
   <main class="shop-main">
-    <h1>Beställ mat online</h1>
+    <h1>Köp överproducerad mat – Rädda en måltid</h1>
+    <p class="info-text">Här kan du köpa mat som blivit över – smart för både klimat och plånbok.<br>
+      För att beställa behöver du logga in med ditt kostdatakonto via MenyIT.</p>
+
+    <!-- Produktexempel, fylls ut från admin senare -->
     <div class="products">
-      <!-- Produktkort – dessa loopas från API i senare version -->
       <div class="product-card">
-        <h2>Caesarsallad</h2>
-        <p>Grillad kyckling, parmesan, krutonger</p>
-        <div class="price">95 kr</div>
-        <button class="add-to-cart">Lägg till</button>
+        <h2>CateringCare's överblivna lasagne</h2>
+        <p>Vegetarisk lasagne från dagens lunch.<br>
+          Portion: ca 450g. Begränsat antal!</p>
+        <div class="price">49 kr</div>
+        <!-- Ej "Köp"-knapp här, utan tydlig info om inlogg -->
       </div>
       <div class="product-card">
-        <h2>Vegetarisk lasagne</h2>
-        <p>Ricotta, spenat, färska tomater</p>
-        <div class="price">89 kr</div>
-        <button class="add-to-cart">Lägg till</button>
+        <h2>Kall laxsallad</h2>
+        <p>Lax, potatis & dillsås – från överskottsproduktion.<br>
+          Portion: ca 400g.</p>
+        <div class="price">45 kr</div>
       </div>
-      <div class="product-card">
-        <h2>Lax med dillstuvad potatis</h2>
-        <p>Färsk lax, dill, potatis, citron</p>
-        <div class="price">110 kr</div>
-        <button class="add-to-cart">Lägg till</button>
-      </div>
+      <!-- Din admin fyller på fler produkter här! -->
     </div>
 
-    <!-- 
-      Enkel varukorgsindikator, byggs ut i senare steg.
-    -->
-    <section id="cart" class="cart">
-      <!-- Blockkommentar: Här landar varukorgsitem dynamiskt -->
-      <h2>Varukorg</h2>
-      <div class="cart-items">
-        <!-- Tom för nu, fylls med JavaScript senare -->
-        <p>Din varukorg är tom.</p>
-      </div>
-      <div class="cart-summary">
-        <div class="cart-total">Summa: 0 kr</div>
-        <button class="cta large" disabled>Till kassan</button>
-      </div>
-    </section>
+    <div class="login-info">
+      <a href="https://menyit.se/" class="cta large" target="_blank">Logga in & beställ via MenyIT</a>
+      <p class="help">Du måste logga in på MenyIT för att köpa maten.</p>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2026 CateringCare. All rights reserved.</p>
   </footer>
-  <script src="shop.js"></script>
 </body>
 </html>
