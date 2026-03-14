@@ -1,25 +1,32 @@
-<!--
-  Admin Dashboard – Översiktspanel för CateringCare
-  Syfte: Ge admin enkel överblick och snabb navigering till olika verktyg.
-  Enkel att bygga ut med fler funktioner, varje länk går till egen sida.
--->
 <!DOCTYPE html>
 <html lang="sv">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin | CateringCare Dashboard</title>
-  <!-- Grundläggande admincss, gärna återanvänd från site, men separat om behov finns -->
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-  <!-- Block: Header och välkomsttext, lätt att anpassa -->
+  <!-- NAVIGATIONSMENY MED ADMIN & MENYIT -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="../index.html" style="text-decoration:none; color:inherit;">CateringCare</a>
+      </div>
+      <ul>
+        <li><a href="../index.html#meny">Meny</a></li>
+        <li><a href="../index.html#om">Om oss</a></li>
+        <li><a href="../index.html#kontakt">Kontakt</a></li>
+        <li><a href="dashboard.html">Admin</a></li>
+        <li><a href="https://menyit.se/" target="_blank" rel="noopener">Logga in MenyIT</a></li>
+      </ul>
+      <a href="../shop.html" class="cta">Handla nu</a>
+    </nav>
+  </header>
   <header>
     <h1>Adminpanel – CateringCare</h1>
     <p>Välkommen, admin! Här styr du menyer, order, kommunikation, kopplingar m.m.</p>
   </header>
-
-  <!-- Block: Navigation till respektive underrubrik/funktioner -->
   <nav class="admin-nav">
     <ul>
       <li><a href="manage-dishes.html">Hantera överproducerad mat</a></li>
@@ -29,16 +36,12 @@
       <li><a href="#">Integration MenyIT (kommer)</a></li>
     </ul>
   </nav>
-
-  <!-- Block: Sektion för framtida systeminformation -->
   <section class="admin-info">
     <h2>Status & info</h2>
     <div id="admin-status">
-      <!-- Inlinekommentar: Här laddas info & statistik dynamiskt in från JS i framtiden -->
       <p>Systemet är online.</p>
     </div>
   </section>
-
   <footer>
     <p>&copy; 2026 CateringCare Adminpanel</p>
   </footer>
