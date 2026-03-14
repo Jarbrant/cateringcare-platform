@@ -1,1 +1,7 @@
-
+# Wrangler-konfiguration för din /api/menu worker
+name = "menu-worker"
+main = "workers/menu-worker.js"
+compatibility_date = "2024-03-01"   # Sätt till dagens datum eller senare
+route = ""
+account_id = "DIN_CLOUDFLARE_ACCOUNT_ID"   # (Fyll i dessa om du vill automationsdeploya)
+# env = ... (vid olika miljöer)
